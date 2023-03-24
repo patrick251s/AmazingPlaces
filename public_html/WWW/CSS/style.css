@@ -1,0 +1,137 @@
+body
+{
+    background-color: #2F3336;
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    min-height: 100%;
+}
+h1, h3
+{
+    font-weight: 400;
+    color: #9999ff;
+    margin: 20px;
+}
+
+figure img
+{
+    transition: all 0.7s ease-in-out;
+}
+
+figure img:hover
+{
+    transform: scale(1.1);
+}
+
+.kolo
+{
+    position: relative;
+    max-width: 100%;
+}
+.wskaznik
+{
+    position: absolute;
+    top:44%;
+    left:60%;
+}
+.mycolor2
+{
+    color: #9999ff;
+}
+.mybutton
+{
+    background-color: #6666ff;
+    color:white;
+}
+p
+{
+    font-size: 17px;
+}
+#data
+{
+    font-size: 22px;
+    color: #9999ff;
+}
+.destinations
+{
+    text-align: center;
+    padding: 0;
+}
+.destinations p
+{
+    margin-bottom: 40px;
+}
+
+.destinations figcaption
+{
+    font-size: 20px;
+}
+
+.navbar
+{
+    min-height: 57px;
+}
+
+aside 
+{
+    font-size:15px;
+}
+
+.mycolor
+{
+    background-color: #9999ff;
+    font-size: 21px;
+}
+
+.opis
+{
+    text-align: justify;
+    font-size: 17px;
+    padding:25px;
+}
+
+.list-group-item-dark
+{
+    background-color: #373a3d;
+    color:white;
+}
+
+.list-group-item-dark:hover
+{
+    background-color: #9999ff !important;
+}
+
+.scrollup
+{
+    width:64px;
+    height:64px;
+    position: fixed;
+    left:18%;
+    bottom:4%;
+    display:none;
+}
+
+@media screen and (max-width:300px)
+{
+    h1
+    {
+        font-size:25px;
+    }
+    h6
+    {
+        font-size:12px;
+    }
+    p
+    {
+        font-size:14px;
+    }
+    .mybutton
+    {
+        font-size: 16px !important;
+    }
+}
+footer
+{
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+	<meta name="description" content="Idealne miejsca do spedzenia wakacji">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" href="CSS/boot/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+                {
+                    $.scrollTo(0);
+                    $('#link1').click(function() { $.scrollTo($('#skoczniaoslo'),500); } ); 
+                    $('#link2').click(function() { $.scrollTo($('#wzgorze'),600); } );
+                    $('#link3').click(function() { $.scrollTo($('#palacoslo'),700); } );
+                    $('#link4').click(function() { $.scrollTo($('#opera'),800); } );
+                    $('#link5').click(function() { $.scrollTo($('#fiordy'),900); } );
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'),500); } );
+                }
+            );
+            $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300 && window.innerWidth>768) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+</head>
+
+<body>
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">
+                           Miejsca </a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+       
+	<main>
+            
+                <div class="container">
+                    <div class="row">
+                        
+                        <aside class="col-md-3">
+                            <h4 class="my-4">Spis treści:</h4>
+                            <ul class="list-group">
+                                <li class="list-group"><a id="link1" href="#" class="list-group-item list-group-item-dark list-group-item-action">Skocznia Holmenkollbakken</a></li>
+                                <li class="list-group"><a id="link2" href="#" class="list-group-item list-group-item-dark list-group-item-action">Wzgórze Holmenkollen</a></li>
+                                <li class="list-group"><a id="link3" href="#" class="list-group-item list-group-item-dark list-group-item-action">Pałac Królewski</a></li>
+                                <li class="list-group"><a id="link4" href="#" class="list-group-item list-group-item-dark list-group-item-action">Opera</a></li>
+                                <li class="list-group"><a id="link5" href="#" class="list-group-item list-group-item-dark list-group-item-action">Fiordy</a></li>
+                            </ul>
+                   
+                            <a href="#" class="scrollup"><img src="images/up.png" alt="Do góry"/></a>
+                        </aside>
+                        
+                        
+                        <div class="col-md-9 bg-white text-body p-4 opis">
+                            <section>
+                                
+                                <header>
+                                    <h1 class="h1 text-dark text-center font-weight-bolt text-uppercase mb-4">Oslo</h1>
+                                    <p>
+                                        Oslo to stolica Norwegii, której położenie jest wyjątkowe. Centrum miasta leży nad samym fiordem, otoczone jest rozległymi lasami, a obszary górskie są bardzo blisko. Tę nowoczesną i niezwykle spójną architektonicznie metropolię zwiedza się komfortowo i przyjemnie. Szerokie aleje, rozległe parki i przemyślana zabudowa sprzyjają spacerom i odkrywaniu surowego, skandynawskiego uroku miasta.
+                                    </p>
+                                </header>
+                                
+                                <article>
+                                    <h2 id="skoczniaoslo" class="h3 font-weight-bolt text-center my-4">Skocznia Holmenkollbakken</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/oslo/skocznia.jpg" alt="Skocznia Holmenkollbakken"/>
+                                    <p>
+                                        Skocznia została otwarta na początku 2010 roku po odbudowie i modernizacji. Po remoncie otwarto ponownie bardzo ciekawe Muzeum Narciarstwa, a na wieży udostępniono dla turystów punkt widokowy, z którego można podziwiać panoramę miasta.
+                                        W Muzeum Narciarstwa można prześledzić historię tego sportu, zobaczyć ciekawe eksponaty z olimpiad zimowych a także zwiedzić ekspozycję na temat polarnych wypraw Amudsena i Nansena.
+                                        Imponująca wieża skoczni ma 60 metrów wysokości. Na budowę jej konstrukcji wykorzystano aż sto ton stali. Co roku, najczęśniej w marcu odbywają się tu zawody Pucharu Świata w skokach narciarskich. Sukcesy odnosili to m.in. Kamil Stoch, Piotr Żyła oraz Adam Małysz, który jest nazywany "królem Holmenkollen".
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="wzgorze" class="h3 font-weight-bolt text-center my-4">Wzgórze Holmenkollen</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/oslo/biegi.jpg" alt="Wzgórze Holmenkollen"/>
+                                    <p>
+                                          Przeciętny obywatel Norwegii wyrasta w czymś, co śmiało można nazwać ludową kulturą narciarską. Narty biegowe są obecne w życiu tych ludzi, w mediach, w historii i kulturze.
+                                          Wzgórze Holmenkollen to doskonałe miejsce do uprawiania tego sportu. Znajduje się tu wiele kilometrów przygotowanych tras biegowych. Narciarstwo biegowe to sport, który ma wielki, pozytywny wpływ na zdrowie fizyczne, ale również psychiczne, gdyż redukuje stres, 
+                                          poprawia nastrój, zwalcza zmęczenie, kształtuje charakter oraz zwiększa pewność siebie. Do popularyzacji tej dyscypliny w Polsce bez wątpienia przyczyniła się Justyna Kowalczyk - mistrzyni olimpijska i świata oraz zwyciężczyni klasyfikacji generalnej Pucharu Świata, która na trasach Holmenkollen kilkukrotnie stawała na podium.
+
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="palacoslo" class="h3 font-weight-bolt text-center my-4">Pałac Królewski</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/oslo/palac.jpg" alt="Pałac Królewski"/>
+                                    <p>
+                                        Pałac królewski w Oslo to jeden z najbardziej charakterystycznych i znanych budynków w mieście. Oficjalna siedziba monarchów norweskich, miejsce oficjalnych wizyt, uroczystych obiadów, przyjmowania gości, ale także miejsce pracy większości członków dworu królewskiego. Obecnie w pałacu mieszka król Harald V wraz z małżonką. Warto dodać, że każdego roku 17 maja w święto narodowe, rodzina królewska pozdrawia poddanych z balkonu pałacowego. Budowę pałacu zainicjował parlament norweski w latach 20-tych XIX w. Kamień węgielny pod budowę położył król Karol III Jan w 1825 r.; prace ukończono dopiero za rządów Oskara I w 1849 r. Pałac wzniesiono w stylu klasycystycznym w kształcie litery U według projektu H.D. Linstowa. To budowla trzypiętrowa o powierzchni 17.624 m2, z czego 1 tys. m2 zajmują 173 pokoje królewskie oraz kaplica pałacowa. Jej główne skrzydło wychodzi na ul. Karla Johansa, zaś po bokach znajdują się dwa mniejsze skrzydła. Naokoło pałacu rozciąga się park, w którym można podziwiać kilka zabytkowych pomników.   
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="opera" class="h3 font-weight-bolt text-center my-4">Opera</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/oslo/opera.jpg" alt="Opera"/>
+                                    <p>
+                                       Zbudowana w 2008 roku opera w Oslo jest największym budynkiem zbudowanym w Norwegii na przestrzeni ostatnich 700 lat, od powstania katedry Nidaros. Opera leży nad samą zatoką Oslofjorden, a jej gmach zadziwia prostotą i nowoczesnością.
+                                       Fundamenty opery w Oslo znajdują się pod poziomem morza (do 16 metrów p.p.m.), a główne materiały przeznaczone na budowę gmachu to biały kamień, drewno, metal i szkło. Biały marmur i granit posłużyły do stworzenia deptaka, który stał się nową przestrzenią miejską. Spadzisty dach opery sięga do samej podstawy i umożliwia swobodne spacerowanie.
+                                       Gmach opery w Oslo wygrał główną nagrodę na Światowym Festiwalu Kultury w 2008 roku, a także nagrodę im. Miesa van der Rohe za wkład w architekturę europejską w 2009 roku.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="fiordy" class="h3 font-weight-bolt text-center my-4">Fiordy</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/oslo/fiordy.jpg" alt="Fiordy"/>
+                                    <p>
+                                        Nie ma bardziej relaksującego sposobu na zwiedzanie Norwegii niż przemierzanie kraju na pokładzie statku wycieczkowego.
+                                        Linia brzegowa Norwegii należy do najdłuższych na świecie, a tak wielu fiordów nie znajdziesz w żadnym innym kraju. Nawet słowo „fiord” pochodzi z języka norweskiego.
+                                        Z pokładu statku można obserwować takie zjawiska, jak zorza polarna oraz dzień polarny.
+                                    </p>
+                                </article>
+                                
+                            </section>   
+                        </div>
+                    </div>
+                </div>
+           
+	</main>
+	
+        <footer class="bg-dark text-light text-center"> &COPY;PK 2020 </footer>
+</body>
+</html>

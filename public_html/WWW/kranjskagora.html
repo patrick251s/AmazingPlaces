@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+	<meta name="description" content="Idealne miejsca do spedzenia wakacji">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" href="CSS/boot/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+                {
+                    $.scrollTo(0);
+                    $('#link1').click(function() { $.scrollTo($('#miasto'),500); } ); 
+                    $('#link2').click(function() { $.scrollTo($('#planica'),600); } );
+                    $('#link3').click(function() { $.scrollTo($('#bled'),700); } );
+                    $('#link4').click(function() { $.scrollTo($('#wawoz'),800); } );
+                    $('#link5').click(function() { $.scrollTo($('#triglav'),900); } );
+                    $('#link6').click(function() { $.scrollTo($('#ski'),1000); } );
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'),500); } );
+                }
+            );
+            $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300 && window.innerWidth>768) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+</head>
+
+<body>
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">
+                           Miejsca </a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+       
+	<main>
+            
+                <div class="container">
+                    <div class="row">
+                        
+                        <aside class="col-md-3">
+                            <h4 class="my-4">Spis treści:</h4>
+                            <ul class="list-group">
+                                <li class="list-group"><a id="link1" href="#" class="list-group-item list-group-item-dark list-group-item-action">Miasto</a></li>
+                                <li class="list-group"><a id="link2" href="#" class="list-group-item list-group-item-dark list-group-item-action">Planica</a></li>
+                                <li class="list-group"><a id="link3" href="#" class="list-group-item list-group-item-dark list-group-item-action">Jezioro Bled</a></li>
+                                <li class="list-group"><a id="link4" href="#" class="list-group-item list-group-item-dark list-group-item-action">Wąwóz Vintgar</a></li>
+                                <li class="list-group"><a id="link5" href="#" class="list-group-item list-group-item-dark list-group-item-action">Triglav</a></li>
+                                <li class="list-group"><a id="link6" href="#" class="list-group-item list-group-item-dark list-group-item-action">Na narty</a></li>
+                            </ul>
+                   
+                            <a href="#" class="scrollup"><img src="images/up.png" alt="Do góry"/></a> 
+                        </aside>
+                        
+                        
+                        <div class="col-md-9 bg-white text-body p-4 opis">
+                            <section>
+                                
+                                <header>
+                                    <h1 class="h1 text-dark text-center font-weight-bolt text-uppercase mb-4">Kranjska Gora</h1>
+                                    <p>
+                                        Położona w rejonie Gorenjska, nieopodal Włoch i Austrii, strzeżona przez majestatyczne szczyty Alp Julijskich, Kranjska Gora jest przez wielu uważana za zimową stolicę Słowenii. Także ze względu na bezpośrednio sąsiedztwo Planicy - światowej stolicy lotów narciarskich.
+                                        W 10 minut można stąd dojechać na pizzę do Włoch (latem to cudna wycieczka rowerowa). Przejazd do Austrii zajmuje nieco dłużej (około 25 minut).
+                                    </p>
+                                </header>
+                                
+                                <article>
+                                    <h2 id="miasto" class="h3 font-weight-bolt text-center my-4">Miasto</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/kranjskagora/miasto.jpg" alt="Miasto"/>
+                                    <p>
+                                        Kranjska Gora to miasto i zarazem popularny kurort zimowy w północno-zachodniej Słowenii, położony w Alpach Julijskich w sąsiedztwie Włoskiej i Austriackiej Granicy. Jeszcze w połowie XIX wieku stanowiła ona niewielką alpejską wioskę, która po wybudowaniu linii kolejowej przeistoczyła się w turystyczne centrum sportów narciarskich. W sezonie zimowym w okolicy miasteczka funkcjonuje wiele wyciągów orczykowych i krzesełkowych, które rozwożą miłośników białego szaleństwa na liczne dobrze przygotowane trasy zjazdowe o zróżnicowanych poziomach trudności.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="planica" class="h3 font-weight-bolt text-center my-4">Planica</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/kranjskagora/planica.jpg" alt="Planica"/>
+                                    <p>
+                                         Fanom skoków narciarskich Planicy przedstawiać nie trzeba. To właśnie w tej pięknej, słoweńskiej dolinie przy granicy z Włochami w marcu odbywa się ostatni z konkursów w ramach Pucharu Świata w skokach, który przyciąga kibiców z całego świata, w tym wielu Polaków.
+                                         Kompleks narciarski składa się z siedmiu skoczni. Największa ma wielkość 240 m i jest uznawana za jedną z dwóch największych obiektów do lotów narciarskich.
+                                         Jeden z rekordowych skoków oddał na niej Kamil Stoch. W 2017 roku doleciał na 251m. 
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="bled" class="h3 font-weight-bolt text-center my-4">Jezioro Bled</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/kranjskagora/bled.jpg" alt="Jezioro Bled"/>
+                                    <p>
+                                         Jezioro Bled – najpiękniejsze i najsłynniejsze jezioro Słowenii, prawdziwa turystyczna perełka i absolutnie zasłużona wizytówka kraju, miejsce, które warto i trzeba zobaczyć. Położone pośród lasów i skał, z czystą szmaragdową wodą i uroczą małą wysepką na środku – Blejski Otok. Jezioro wygląda wręcz baśniowo. Na wyspie stoi kościółek Maryi Wspomożycielki, w którym znajduje się bardzo popularny dzwon życzeń.
+                                         Dzięki aktywnym źródłom termalnym Bled jest jednym z najcieplejszych alpejskich jezior, z temperaturą dochodzącą nawet do +26 °C.
+                                         Kulinarnym przebojem Bledu są “kremne rezine” – kultowe, przepyszne bledzkie kremówki.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="wawoz" class="h3 font-weight-bolt text-center my-4">Wąwóz Vintgar z wodospadem Šum</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/kranjskagora/wawoz.jpg" alt="Wąwóz Vintgar"/>
+                                    <p>
+                                         Jest to jedna z największych atrakcji turystycznych Słowenii. Dnem skalnego kanionu płynie rwąca górska rzeka, na końcu czeka nas widok wysokiego wodospadu Šum. Wodospad ma wysokość 13 m i jest największym słoweńskim wodospadzie rzecznym. Po drodze zobaczymy imponujący most, który jest największym kamiennym mostem kolejowym zachowanym w całości w Słowenii. Wycieczkę można też przedłużyć i zwiedzić zabytkowy XV-wieczny gotycki kościół św. Katarzyny, przy okazji robiąc zgrabną pętlę.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="triglav" class="h3 font-weight-bolt text-center my-4">Triglav</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/kranjskagora/triglav.jpg" alt="Triglav"/>
+                                    <p>
+                                        Triglav – najwyższa góra Słowenii i Alp Julijskich. Jej majestatyczna, północna ściana o wysokości ponad 1000 m i 3000 m szerokości jest jedną z najpotężniejszych skalnych ścian w całych Alpach. Triglav to także święta góra Słoweńców i niezwykle popularny cel wycieczek, w sezonie letnim wręcz obleganym, na jej szczyt wchodzą całe grupy rodzinne. Wizerunek góry znajduje się w godle państwowym. Duże zasługi w popularyzacji turystyki miał ksiądz Jakob Aljaž, który w 1889 r. odkupił szczyt góry, by został w słoweńskich rękach. Z jego inicjatywy na szczycie ustawiono okrągłą metalową wieżę, tzw. Aljažev Stolp (Wieża Aljaża) oraz wybudowano schronisko – Triglavski dom na Kredarici (2515 m).
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="ski" class="h3 font-weight-bolt text-center my-4">Na narty</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/kranjskagora/ski.jpg" alt="Na narty"/>
+                                    <p>
+                                        Poczatkujący narciarze mogą skorzystać w sumie z 10 km tras łatwych. Oprócz tego są tereny wyznaczone do nauki jazdy na nartach. Liczne szkółki narciarskie posiadają dużą ofertę grup wiekowych o różnym stopniu zaawansowania. Osoby, które nie posiadają własnego sprzętu mogą skorzystać z wielu wypożyczalni, znajdujących się w różnych miejscach na terenie ośrodka.
+                                        <br/>
+                                        Tras dla średniozaawansowanych narciarzy jest w sumie ok. 8 km. Trasy o różnym charakterze nadają się również dla bardziej doświadczonych i wymagających osób.
+                                        <br/>            
+                                        Trasy trudne dla zaawansowanych narciarzy mają tylko 2 km. Pomimo iż jest ich stosunkowo mało, to są znakomicie przygotowane i niejednokrotnie mogą przedstawiać wyzwanie.
+                                        <br/>    
+                                        Łagodne zjazdy czekają na amatorów dziewiczych tras na stokach Karavanki. Amatorzy adrenaliny odnajdą się w Alpach Julijskich. Propozycja dla zaawansowanych to zjazd z Mojstrovki, Kotovego siodła pod szczytem Kriška. Drugą propozycją jest trasa Triglav – od Kredaricy do Krmy, albo od Dovškiej baby pod Karavanką.
+                                    </p>
+                                </article>
+                                
+                            </section> 
+                        </div> 
+                           
+                    </div>
+                </div>
+            
+	</main>
+	
+        <footer class="bg-dark text-light text-center"> &COPY;PK 2020 </footer>
+</body>
+</html>

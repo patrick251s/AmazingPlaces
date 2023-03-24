@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+	<meta name="description" content="Idealne miejsca do spedzenia wakacji">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" href="CSS/boot/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        <script src="JS/funkcje.js"></script>
+  
+</head>
+
+<body>
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">
+                           Miejsca </a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        
+    
+	<main>
+            <section>
+                <div class="container">
+                   <div class="row"> 
+                    <div class="col-12 text-center mb-5">
+                        <h1>Kontakt</h1>
+                        <h4>Patryk Kaźmierak</h4>
+                        <h6>E-mail: patryk.kazmierak@pollub.edu.pl</h6>
+                    </div>
+                      
+                    <div class="col-12 text-center mb-2">
+                        <h4 class="mycolor2 mb-3">Wypełnij poniższy formularz, aby uzyskać więcej informacji na temat wybranych miejsc</h4>
+                            
+                        
+                        <div class="my-2">
+                            <form id="myform" action="mailto:patryk.kazmierak@pollub.edu.pl" method="post" onsubmit="return pokazDane();">
+
+                                    <h5 class="mycolor2">Imię:</h5> 
+                                    <input class="form-control col-8 mx-auto mb-2" type="text" id="imie" required pattern="[a-żA-Ż- ]{1,}" title="Imię">
+                                    <h5 class="mycolor2">Nazwisko:</h5>
+                                    <input class="form-control col-8 mx-auto mb-2" type="text" id="nazwisko" required pattern="[a-żA-Ż-]{1,}" title="Nazwisko">
+                                        
+                                    <h5 class="mycolor2">Twój adres e-mail:</h5>
+                                    <input class="form-control col-8 mx-auto mb-2" type="email" name="email" id="email" size="30" required title="Podaj Twój adres e-mail">
+                                    
+                                        <h5 class="mycolor2">Twój wiek:</h5> 
+                                            <select class="form-control col-8 mx-auto mb-2" name="wiek" id="wiek">
+                                            <option id="0-17">0-17</option>
+                                            <option selected id="18-30">18-30</option>
+                                            <option id="31-50">31-50</option>
+                                            <option id="51-67">51-67</option>
+                                            <option id="67+">67+</option>
+                                            </select>
+                                        
+                                        <h5 class="mycolor2">Twoja płeć:</h5>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check form-check-sm mx-auto" id="k" type="radio" name="plec" value="Kobieta" required>
+                                            <label class="form-check-label" for="k">Kobieta</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check form-check-sm mx-auto" id="m" type="radio" name="plec" value="Mężczyzna" required>
+                                            <label class="form-check-label" for="m">Meżczyzna</label>
+                                        </div>
+                                        
+                                        
+                                        <h5 class="mycolor2 mt-2">Wybierz miejsca, o których chciałbyś dowiedzieć się więcej:</h5>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input form-check-input-sm " id="lizbona" type="checkbox" name="miejsce" value="Lizbona">
+                                            <label class="form-check-label" for="lizbona">Lizbona</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input form-check-input-sm" id="rzym" type="checkbox" name="miejsce" value="Rzym">
+                                             <label class="form-check-label" for="rzym">Rzym</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input form-check-input-sm" id="kranjska" type="checkbox" name="miejsce" value="Kranjska Gora">
+                                             <label class="form-check-label" for="kranjska">Kranjska Gora</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input form-check-input-sm" id="oslo" type="checkbox" name="miejsce" value="Oslo">
+                                             <label class="form-check-label" for="oslo">Oslo</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input form-check-input-sm" id="wenecja" type="checkbox" name="miejsce" value="Wenecja">
+                                             <label class="form-check-label" for="wenecja">Wenecja</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input form-check-input-sm" id="tatry" type="checkbox" name="miejsce" value="Tatry">
+                                             <label class="form-check-label" for="tatry">Tatry</label>
+                                        
+                                        </div>
+                                            
+                                        <h5 class="mycolor2 mt-2">Jaką kwotę chciałbyś przeznaczyć na wyjazd?</h5>
+                                        <input class="form-control form-control-sm mx-auto mb-2 col-6" type="number" id="kwota" min="100" step="100" value="100" required>                                  
+                                                 
+                                        <textarea class="my-3 form-control col-8 mx-auto" id="komentarz" name="komentarz"  
+                                                  placeholder="Tu napisz komentarz lub opinię"></textarea>
+              
+                                        <input class="btn mybutton my-1" type="submit" value="Wyślij i zapisz">
+                                        <input class="btn mybutton my-1" type="reset" value="Wyczyść">
+   
+                            </form>
+                        </div>
+                        
+                        <div class="mb-3">
+                           
+                                <button class="btn mybutton my-1" onclick="wyswietl()">Wyświetl wpisy</button>
+                                <button class="btn mybutton my-1" onclick="usun()">Usuń wpisy</button>
+                                <button class="btn mybutton my-1" onclick="schowaj()">Schowaj wpisy</button>
+                            
+                        </div>
+                        
+                        <div id="wyniki"></div>
+                        
+
+                    </div>
+                   </div>
+                </div>
+            </section>
+	</main>
+	
+        <footer class="bg-dark text-light text-center"> &COPY;PK 2020 </footer>
+    
+</body>
+</html>

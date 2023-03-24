@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+        
+	<meta name="description" content="Niezwykłe i ciekawe miejsca do odwiedzenia">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" type="text/css" href="CSS/boot/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        <script src="JS/funkcje.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" type="text/css" rel="stylesheet">
+	
+</head>
+
+<body onload="ustawDate()">
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">Miejsca</a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        
+    
+    <main>
+        <section class="destinations">
+                <div class="container">
+                        <header>
+                                <h1>Niesamowite miejsca</h1>
+                                <p class="mb-4">Na tej stronie chciałbym zaprezentować Ci kilka niezwykłych miejsc, które warto odwiedzić.</p>
+                                <p id="data">Tu jest data</p>
+                        </header>
+
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                    <figure>
+                                            <a href="lizbona.html"><img class="img-fluid" src="images/lizbona.jpg" alt="Lizbona"></a>
+                                            <figcaption class="mt-3 mb-5">Lizbona</figcaption>
+                                    </figure>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                    <figure>
+                                            <a href="rzym.html"><img class="img-fluid" src="images/rzym.jpg" alt="Rzym"></a>
+                                            <figcaption class="mt-3 mb-5">Rzym</figcaption>
+                                    </figure>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                    <figure>
+                                            <a href="oslo.html"><img class="img-fluid" src="images/oslo.jpg" alt="Oslo"></a>
+                                            <figcaption class="mt-3 mb-5">Oslo</figcaption>
+                                    </figure>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                    <figure>
+                                            <a href="kranjskagora.html"><img class="img-fluid" src="images/kranjskagora.jpg" alt="Kranjska Gora"></a>
+                                            <figcaption class="mt-3 mb-5">Kranjska Gora</figcaption>
+                                    </figure>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                    <figure>
+                                            <a href="wenecja.html"><img class="img-fluid" src="images/wenecja.jpg" alt="Wenecja"></a>
+                                            <figcaption class="mt-3 mb-5">Wenecja</figcaption>
+                                    </figure>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                    <figure>
+                                            <a href="tatry.html"><img class="img-fluid" src="images/zakopane.jpg" alt="Tatry"></a>
+                                            <figcaption class="mt-3 mb-5">Tatry</figcaption>
+                                    </figure>
+                            </div>
+                        </div>	
+                </div>		
+        </section>
+    </main>
+	
+    <footer class="bg-dark text-light text-center fixed-bottom"> &COPY;PK 2020 </footer>
+   
+</body>
+</html>

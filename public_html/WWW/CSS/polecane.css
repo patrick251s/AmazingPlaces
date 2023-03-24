@@ -1,0 +1,79 @@
+.truck
+{
+    text-decoration: none;
+    font-family: 'McLaren', cursive;
+}
+.truck:hover
+{
+    color:#9999ff;
+    text-decoration: none;
+}
+.postac
+{
+    text-align: justify;
+    font-size:17px;
+}
+h4
+{
+    text-align: center;
+    color: #9999ff;
+}
+.icon-youtube, .icon-facebook, .icon-instagram, .icon-skiing
+{
+    font-size:350%;
+    color:white;
+}
+.icon-skiing:hover
+{
+    color:#ffcc66;
+}
+.icon-youtube:hover
+{
+    color:#c4302b;
+}
+.icon-facebook:hover
+{
+    color: #3b5998;
+}
+.icon-instagram:hover
+{
+    color:#3f729b;
+}
+.ochtPicture
+{
+    margin-top:8px;
+    max-width: 60%;
+}
+.ochtPicture:hover
+{
+    opacity:0.6;
+}
+a:hover
+{
+    color:#2F3336;
+}
+.bargiel img:hover
+{
+    opacity:0.6;
+}
+@media all and (min-width:341px) and (max-width:575px)
+{
+	.icon-youtube, .icon-facebook, .icon-instagram, .icon-skiing
+	{
+		font-size:250%;
+	}  
+}
+@media all and (min-width:255px) and (max-width:340px)
+{
+    .icon-youtube, .icon-facebook, .icon-instagram, .icon-skiing
+    {
+		font-size:125%;
+    }
+}
+@media all and (max-width:254px)
+{
+    .icon-youtube, .icon-facebook, .icon-instagram, .icon-skiing
+    {
+		font-size:75%;
+    }
+}

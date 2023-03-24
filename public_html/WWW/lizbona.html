@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+	<meta name="description" content="Idealne miejsca do spedzenia wakacji">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" href="CSS/boot/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+                {
+                    $.scrollTo(0);
+                    $('#link1').click(function() { $.scrollTo($('#zamek'),500); } ); 
+                    $('#link2').click(function() { $.scrollTo($('#ogrod'),600); } );
+                    $('#link3').click(function() { $.scrollTo($('#wieza'),700); } );
+                    $('#link4').click(function() { $.scrollTo($('#ciasteczka'),800); } );
+                    $('#link5').click(function() { $.scrollTo($('#klasztor'),900); } );
+                    $('#link6').click(function() { $.scrollTo($('#cabo'),1000); } );
+                    $('#link7').click(function() { $.scrollTo($('#ursa'),1100); } );
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'),500); } );
+                }
+            );
+            $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300 && window.innerWidth>768) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+</head>
+
+<body>
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">
+                           Miejsca </a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+       
+	<main>
+            
+                <div class="container">
+                    <div class="row">
+                        
+                        <aside class="col-md-3">
+                            <h4 class="my-4">Spis treści:</h4>
+                            <ul class="list-group">
+                                <li class="list-group"><a id="link1" href="#" class="list-group-item list-group-item-dark list-group-item-action">Zamek świętego Jerzego</a></li>
+                                <li class="list-group"><a id="link2" href="#" class="list-group-item list-group-item-dark list-group-item-action">Park Edwarda VII</a></li>
+                                <li class="list-group"><a id="link3" href="#" class="list-group-item list-group-item-dark list-group-item-action">Wieża Belem</a></li>
+                                <li class="list-group"><a id="link4" href="#" class="list-group-item list-group-item-dark list-group-item-action">Przysmak Lizbony</a></li>
+                                <li class="list-group"><a id="link5" href="#" class="list-group-item list-group-item-dark list-group-item-action">Klasztor Hieronimitów</a></li>
+                                <li class="list-group"><a id="link6" href="#" class="list-group-item list-group-item-dark list-group-item-action">Cabo da Roca</a></li>
+                                <li class="list-group"><a id="link7" href="#" class="list-group-item list-group-item-dark list-group-item-action">Praia da Ursa</a></li>
+                            </ul>
+                   
+                            <a href="#" class="scrollup"><img src="images/up.png" alt="Do góry"/></a>
+                        </aside>
+                        
+                        <div class="col-md-9 bg-white text-body p-4 opis">
+                            <section>
+                                
+                                <header>
+                                    <h1 class="h1 text-dark text-center font-weight-bolt text-uppercase mb-4">Lizbona</h1>
+                                    <p>
+                                        Lizbona, stolica Portugalii i największe miasto tego słonecznego oraz wysuniętego na zachód kraju. Wyjazd do Lizbony w przeszłości był albo kosztowny,
+                                        albo wymagał większego sprytu podczas szukania połączeń łączonych. Na szczęście taka sytuacja jest już historią i dziś dzięki tanim liniom możemy dolecieć tam bez większych problemów i w rozsądnej cenie.
+                                    </p>
+                                </header>
+                               
+                                <article>
+                                    <h2 id="zamek" class="h3 font-weight-bolt text-center my-4">Zamek świętego Jerzego</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/zamekswietegojerzego.jpg" alt="Zamek świętego Jerzego"/>
+                                    <p>
+                                        Zamek Świętego Jerzego (Castelo de São Jorge) położony jest w starej dzielnicy Lizbony – Alfamie. Wybudowany został w X wieku przez Maurów i był pod ich panowaniem aż do roku 1147 gdy Lizbona wraz z pobliskimi fortyfikacjami została podbita przez pierwszego króla Portugalii Afonso’a Henriques’a podczas drugiej krucjaty. Z obwarowań rozprzestrzenia się bajeczny widok na całe stare miasto, rynek, a nawet, jeżeli trafi się na przejrzyste niebo obok rzeki (gdy nie paruje), można zobaczyć wieżę Bellem skąd Vasco da Gama wyruszał w odkrywaniu nieznanych lądów 
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="ogrod" class="h3 font-weight-bolt text-center my-4">Park Edwarda VII</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/parkedwardavii.jpg" alt="Park Edwarda VII"/>
+                                    <p>
+                                        Obok urokliwego ogrodu Amália Rodrigues znajduje się jeden z bardziej rozległych parków w Lizbonie, a także jeden z najbardziej kultowych! Dla osób odwiedzających Lizbonę, naprawdę trudno nie natknąć się na Parque Eduardo VII, ponieważ jest to swego rodzaju przedłużenie ruchliwej Avenida da Liberdade, w samym sercu miasta.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="wieza" class="h3 font-weight-bolt text-center my-4">Wieża Belem</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/wiezabelem.jpg" alt="Wieża Belem"/>
+                                    <p>
+                                        Wieża Belem niegdyś strażnik portu w Lizbonie i symbol potęgi miasta, obecnie niezwykły punkt widokowy i  wizytówka całej Portugalii. Wieża Belém została wzniesiona blisko ujścia rzeki Tag na początku XVI wieku. Pełniła funkcję więzienia, później posterunku celnego oraz latarni morskiej.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="ciasteczka" class="h3 font-weight-bolt text-center my-4">Przysmak Lizbony</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/ciasteczka.jpg" alt="Ciasteczka"/>
+                                    <p>
+                                       Babeczki Pasteis de Belem (nazywane również Pasteis de Nata), to najpopularniejszy portugalski deser, który jest znany nie tylko w Lizbonie, ale w całej Portugalii i wszędzie tam, gdzie są Portugalczycy. To właśnie w dzielnicy Belem narodziły się te słynne ciasteczka/babeczki, a fabryka je produkująca, ulokowana jest tuż obok Klasztoru Hieronimitów, i sprzedaje ciasteczka Pasteis de Belem od 1837 roku.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="klasztor" class="h3 font-weight-bolt text-center my-4">Klasztor Hieronimitów</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/klasztorhieronimitow.jpg" alt="Klasztor Hieronimitów"/>
+                                    <p>
+                                        Klasztor Hieronimitów (Jeronimos) to perełka stylu manuelińskiego oraz jedno z najpiękniejszych miejsc w Lizbonie. Jednym z głównych i robiących największe wrażenie zabytków w Lizbonie jest przepiękny klasztor Hieronimitów w Belem. Budowa rozpoczęta w 1501 roku przez króla Manuela I Szczęśliwego i finansowana z bogactw napływających do Portugalii z jej zamorskich posiadłości, monaster ten pozostaje jednym z cudowniejszych przykładów stylu manuelińskiego w architekturze.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="cabo" class="h3 font-weight-bolt text-center my-4">Cabo da Roca</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/cabodaroca.jpg" alt="Cabo da Roca"/>
+                                    <p>
+                                        Cabo da Roca to dziki i surowy przylądek, stanowiący najdalej wysunięty na zachód punkt stałego lądu Europy. Aż do późniego XIV wieku wierzono, że te smagane wiatrem klify Cabo da Roca są krańcem świata. Do niezwykłej atmosfery panującej w tym miejscu przyczynia się także otaczający półwysep opustoszały, dziki krajobraz, a także wzburzone fale, uderzające o podnóża klifów tuż przy trudnym szlaku biegnącym po położonych na wybrzeżu ścieżkach.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="ursa" class="h3 font-weight-bolt text-center my-4">Plaia da Ursa</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/lizbona/plaiadaursa.jpg" alt="Plaia da Ursa"/>
+                                    <p>
+                                        Praia da Ursa, czyli Plaża Niedźwiedzia w Sintrze, obok przylądka Cabo da Roca, to swoista plaża marzeń. Plaża Ursa to dzika plaża, bez tłumów turystów, hałasu, infrastruktury turystycznej, a z przepięknymi formacjami skalnymi i złotym piaskiem.
+                                        Plaża Ursa otoczona jest przez wysokie klify i stromo opadające skały, a z dwóch stron dodatkowo znajdują się bajkowe formacje skalne nazywany Giganami z Ursa. To właśnie dzięki jednej ze skał, która ma przypominać niedźwiedzia plaża, zawdzięcza swoja nazwą – Plaża Niedźwiedzia.
+                                        Miejsce, w którym wizyta na zachód słońca długo zapada w pamięć. 
+                                        Jest ona zlokalizowana na terenie Parku Naturalnego Sintra-Cascais (Parque Natural de Sintra-Cascais) bardzo blisko słynnego przylądka Cabo da Roca, od którego plażę Ursa w linii prostej dzieli ok. 1,5 km.
+                                    </p>
+                                </article>
+                                
+                            </section>   
+                        </div>
+                    </div>
+                </div>
+            
+	</main>
+    
+        <footer class="bg-dark text-light text-center"> &COPY;PK 2020 </footer>
+	
+</body>
+</html>

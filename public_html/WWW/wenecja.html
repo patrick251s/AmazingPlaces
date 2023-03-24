@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+	<meta name="description" content="Idealne miejsca do spedzenia wakacji">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" href="CSS/boot/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+                {
+                    $.scrollTo(0);
+                    $('#link1').click(function() { $.scrollTo($('#bazylikaMarka'),500); } ); 
+                    $('#link2').click(function() { $.scrollTo($('#mostwestchnien'),600); } );
+                    $('#link3').click(function() { $.scrollTo($('#canalgrande'),700); } );
+                    $('#link4').click(function() { $.scrollTo($('#mostrialto'),800); } );
+                    $('#link5').click(function() { $.scrollTo($('#galeriawenecja'),900); } );
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'),500); } );
+                }
+            );
+            $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300 && window.innerWidth>768) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+</head>
+
+<body>
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">
+                           Miejsca </a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+       
+	<main>
+            
+                <div class="container">
+                    <div class="row">
+                        
+                        <aside class="col-md-3">
+                            <h4 class="my-4">Spis treści:</h4>
+                            <ul class="list-group">
+                                <li class="list-group"><a id="link1" href="#" class="list-group-item list-group-item-dark list-group-item-action">Bazylika świętego Marka</a></li>
+                                <li class="list-group"><a id="link2" href="#" class="list-group-item list-group-item-dark list-group-item-action">Most Westchnień</a></li>
+                                <li class="list-group"><a id="link3" href="#" class="list-group-item list-group-item-dark list-group-item-action">Canal Grande</a></li>
+                                <li class="list-group"><a id="link4" href="#" class="list-group-item list-group-item-dark list-group-item-action">Most Rialto</a></li>
+                                <li class="list-group"><a id="link5" href="#" class="list-group-item list-group-item-dark list-group-item-action">Galeria Dell'Accademia</a></li>
+                            </ul>
+                   
+                            <a href="#" class="scrollup"><img src="images/up.png" alt="Do góry"/></a> 
+                        </aside>
+                        
+                        
+                        <div class="col-md-9 bg-white text-body p-4 opis">
+                            <section>
+                                
+                                <header>
+                                    <h1 class="h1 text-dark text-center font-weight-bolt text-uppercase mb-4">Wenecja</h1>
+                                    <p>
+                                        “Wolę być w Wenecji w jeden deszczowy dzień niż w pogodny w każdej innej stolicy” – stwierdził pisarz Herman Melville w 1857 roku. Wenecja posiada niesamowity urok: zarówno w środku zimy, gdy jest pokryta czarującą mgłą, jak i w upalne dni, gdy weneckie kanały mienią się w słońcu, a gondolierzy częstują lokalnym winem.
+                                    </p>
+                                </header>
+                                
+                                <article>
+                                    <h2 id="bazylikaMarka" class="h3 font-weight-bolt text-center my-4">Bazylika świętego Marka</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/wenecja/bazylikaMarka.jpg" alt="Bazylika świętego Marka"/>
+                                    <p>
+                                        Bazylika św. Marka nosi imię Ewangelisty, którego szczątki Wenecjanie przywieźli w IX wieku z Aleksandrii.
+                                        Znajdująca się przy Placu św. Marka budowla stanowi świetny przykład architektury bizantyjskiej. Każdego roku przyciąga miliony turystów pragnących na własne oczy zobaczyć jej złote sklepienia oraz kryjące się w jej wnętrzu skarby, takie jak Pala d’Oro – Złoty Ołtarz czy konie z kwadrygi.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="mostwestchnien" class="h3 font-weight-bolt text-center my-4">Most Westchnień</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/wenecja/mostwestchnien.jpg" alt="Most Westchnień"/>
+                                    <p>
+                                        Most westchnień (Ponte dei Sospiri) to najsłynniejszy most w całej Wenecji, znany nie tylko we Włoszech, ale również na całym świecie. Zaprojektował go Antoni Contino, a budowę ukończono w 1614 roku. Trzeba przyznać, że jest on nie tylko najbardziej znany, ale również najbardziej romantyczny. Jak głosi legenda, pocałunek pod mostem, w gondoli, w blasku zachodzącego słońca gwarantuje parze dozgonną miłość.
+                                    </p>
+                                </article>    
+                                
+                                <article>
+                                    <h2 id="canalgrande" class="h3 font-weight-bolt text-center my-4">Canal Grande</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/wenecja/canalgrande.jpg" alt="Canal Grande"/>
+                                    <p>
+                                        Jeśli spojrzymy na plan Wenecji, zauważymy że jest ona przedzielona na dwie części. Granicę pomiędzy dwiema częściami miasta stanowi Canal Grande, główna arteria wodna miasta.
+                                        Zbudowany w XV w, Canal Grande bierze swój początek przy dworcu kolejowym, a kończy się przy przystani San Marco. Choć w linii prostej dzieli te punkty zaledwie półtora kilometra, sam kanał osiąga długość niespełna 4 kilometrów. Jest on głęboki na około 5-6 metrów a jego szerokość wynosi od 30 do 60 m.
+                                        Turyści zwiedzający kanał najczęściej podróżują charakterystycznymi gondolami.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="mostrialto" class="h3 font-weight-bolt text-center my-4">Most Rialto</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/wenecja/mostrialto.jpg" alt="Most Rialto"/>
+                                    <p>
+                                        Most Rialto czyli Ponte di Rialto to najstarszy most w Wenecji i pierwszy, który połączył oba brzegi Canale Grande. To jedna z najbardziej charakterystycznych budowli w mieście, która przyciąga rzesze turystów.
+                                        Poprzednik Ponte di Rialto stał w tym miejscu już w 1181 roku. Był to most pontonowy, zbudowany na statkach. Nazywał się Ponte della Monete, czyli Most Monet. Nazwa wzięła się od mennicy, w której wybijano monety, a która znajdowała się przy wejściu na most.
+                                        Pod mostem przepływają tramwaje wodne, gondole, łodzie-taksówki, motorówki i wodni kurierzy.
+                                        Warto wiedzieć, że Ponte di Rialto jest najcześciej fotografowanym mostem we Włoszech.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="galeriawenecja" class="h3 font-weight-bolt text-center my-4">Galeria Dell'Accademia</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/wenecja/muzeumwenecja.jpg" alt="Galeria Dell'Accademia"/>
+                                    <p>
+                                        Gallerie dell’Accademia – muzeum sztuki prezentujące głównie dzieła malarstwa weneckiego od XIV do XVIII wieku.
+                                        Zanim powstała galeria, w 1750 roku została założona przez Gian Battistę Piazzettę, Akademia Malarzy i Rzeźbiarzy.
+                                        Znajdują się tu dzieła m.in.:
+                                        <br/>Leonardo da Vinci – Człowiek witruwiański
+                                        <br/>Giovanni Battista Pittoni - Zwiastowanie
+                                        <br/>Gentile Bellini – Procesja Krzyża Świętego na placu św, Marka, Cud przy Ponte San Lorenzo
+                                        <br/>Giovanni Bellini – Ołtarz św. Hioba, Sacra conversazione Giovannelli, Pietà
+                                        <br/>Vittore Carpaccio – Przyjęcie ambasadorów, Cud Krzyża Świętego na moście Rialto, Sen św. Urszuli
+                                    </p>
+                                </article>
+                                
+                            </section>
+                        </div> 
+                    </div>
+                </div>
+            
+	</main>
+	
+        <footer class="bg-dark text-light text-center"> &COPY;PK 2020 </footer>
+</body>
+</html>

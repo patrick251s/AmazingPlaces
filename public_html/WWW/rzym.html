@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projekt wakacje</title>
+	<meta name="description" content="Idealne miejsca do spedzenia wakacji">
+	<meta name="keywords" content="wakacje, urlop, turystyka">
+        <meta name="author" content="PK">
+	
+        <link rel="stylesheet" href="CSS/boot/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="JS/boot/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+                {
+                    $.scrollTo(0);
+                    $('#link1').click(function() { $.scrollTo($('#bazylikaPiotra'),500); } ); 
+                    $('#link2').click(function() { $.scrollTo($('#muzea'),600); } );
+                    $('#link3').click(function() { $.scrollTo($('#koloseum'),700); } );
+                    $('#link4').click(function() { $.scrollTo($('#fontanna'),800); } );
+                    $('#link5').click(function() { $.scrollTo($('#bazylikaPawla'),900); } );
+                    $('#link6').click(function() { $.scrollTo($('#zamek2'),1000); } );
+                    $('#link7').click(function() { $.scrollTo($('#forum'),1100); } );
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'),500); } );
+                }
+            );
+            $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300 && window.innerWidth>768) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+</head>
+
+<body>
+        
+    <header>
+        <nav class="navbar navbar-dark mycolor navbar-expand-md">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                           role="button"
+                           id="submenu" aria-haspopup="true">
+                           Miejsca </a>
+                        
+                            <div class="dropdown-menu mycolor" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="lizbona.html">Lizbona</a>
+                                <a class="dropdown-item" href="rzym.html">Rzym</a>
+                                <a class="dropdown-item" href="oslo.html">Oslo</a>
+                                <a class="dropdown-item" href="kranjskagora.html">Kranjska Gora</a>
+                                <a class="dropdown-item" href="wenecja.html">Wenecja</a>
+                                <a class="dropdown-item" href="tatry.html">Tatry</a>
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="polecane.html">Polecane strony</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+       
+	<main>
+                <div class="container">
+                    <div class="row">
+                        
+                        
+                        <aside class="col-md-3">
+                                <h4 class="my-4">Spis treści:</h4>
+                                <ul class="list-group">
+                                    <li class="list-group"><a id="link1" href="#" class="list-group-item list-group-item-dark list-group-item-action">Bazylika świętego Piotra</a></li>
+                                    <li class="list-group"><a id="link2" href="#" class="list-group-item list-group-item-dark list-group-item-action">Muzea Watykańskie</a></li>
+                                    <li class="list-group"><a id="link3" href="#" class="list-group-item list-group-item-dark list-group-item-action">Koloseum</a></li>
+                                    <li class="list-group"><a id="link4" href="#" class="list-group-item list-group-item-dark list-group-item-action">Fontanna di Trevi</a></li>
+                                    <li class="list-group"><a id="link5" href="#" class="list-group-item list-group-item-dark list-group-item-action">Bazylika świętego Pawła za Murami</a></li>
+                                    <li class="list-group"><a id="link6" href="#" class="list-group-item list-group-item-dark list-group-item-action">Zamek świętego Anioła</a></li>
+                                    <li class="list-group"><a id="link7" href="#" class="list-group-item list-group-item-dark list-group-item-action">Forum Romanum</a></li>
+                                </ul>
+
+                            <a href="#" class="scrollup"><img src="images/up.png" alt="Do góry"/></a>
+                        </aside>
+         
+                        <div class="col-md-9 bg-white text-body p-4 opis">
+                            <section>
+                                
+                                <header>
+                                    <h1 class="h1 text-dark text-center font-weight-bolt text-uppercase mb-4">Rzym</h1>
+                                    <p>
+                                        Rzym jest stolicą Republiki Włoskiej i największym jej miastem. Liczy ok. 2,8 mln mieszkańców. Jest także centrum administracyjnym prowincji Rzym i regionu Lacjum (wł. Lazio). Leży na zachodnim skraju środkowej Italii, nad rzeką Tyber (wł. fiume Tevere). Jest jednym z najczęściej odwiedzanych miast na świecie i największą atrakcją turystyczną Włoch.
+                                    </p>
+                                </header>
+                                    
+                                <article>
+                                    <h2 id="bazylikaPiotra" class="h3 font-weight-bolt text-center my-4">Bazylika świętego Piotra</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/bazylika.jpg" alt="Bazylika świętego Piotra"/>
+                                    <p>
+                                        Bazylika św. Piotra (wł. Basilica di San Pietro in Vaticano) to bez wątpienia jeden z najpiękniejszych kościołów świata. Spacerując pomiędzy nawami i kaplicami możemy poczuć się tak, jakbyśmy zwiedzali znamienite muzeum sztuki - świątynię ozdabiają dzieła takich mistrzów jak Gianlorenzo Bernini, Michał Anioł czy Antonio Canova.
+                                        W XVI wieku stara bazylika Konstantyna była w opłakanym stanie. Dlatego też papież - mecenas Juliusz II podjął decyzję o jej zburzeniu i wystawieniu w tym miejscu godnego kościoła. Budowę nadzorowali między innymi: Donato Bramante, Rafael Santi, Michał Anioł, Domenico Fontana i Carlo Maderno. Kościół konsekrował w 1626 roku papież Urban VIII.
+                                        Plac świętego Piotra i charakterystyczna kolumnada są prawdopodobnie jednym z najłatwiej rozpoznawalnych miejsc na świecie. Na jego kształt składają się dwie figury geometryczne: trapez i elipsa. Całość otoczona jest kolumnadą z rzeźbami 140 świętych. Wśród nich znajdziemy jednego Polaka - świętego Jacka Odrowąża.
+                                        W Bazylice znajdują się groby wielu papieży - począwszy od świętego Piotra po ostatnich papieży m.in. św. Jana XXIII, św. Pawła VI, Jana Pawła I czy św. Jana Pawła II.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="muzea" class="h3 font-weight-bolt text-center my-4">Muzea Watykańskie</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/muzea.jpg" alt="Muzea Watykańskie"/>
+                                    <p>
+                                        Muzea Watykańskie to jedna z głównych atrakcji Watykanu. W budynku prezentowana jest ogromna kolekcja dzieł sztuki, które na przestrzeni wieków zgromadzili poszczególni papieże. Codziennie rano do Muzeów Watykańskich ustawia się długa kolejka turystów, a sposobem na jej uniknięcie jest kupienie biletu wstępu online z wejściem o konkretnej godzinie.
+                                        Wielu turystów wybiera się do Muzeów Watykańskich w jednym celu - żeby zobaczyć słynną Kaplicę Sykstyńską ozdobioną malowidłami Michała Anioła oraz innych mistrzów, w której po śmierci lub ustąpieniu papieża organizowane jest konklawe (zgromadzenie mające na celu wybranie nowej głowy kościoła). Ta znana na całym świecie budowla powstała między 1475 a 1483 rokiem podczas pontyfikatu Sykstusa IV. To właśnie od imienia papieża wywodzi się nazwa kaplicy i warto to zapamiętać.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="koloseum" class="h3 font-weight-bolt text-center my-4">Koloseum</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/koloseum.jpg" alt="Koloseum"/>
+                                    <p>
+                                        Amfiteatr Flawiuszów, Koloseum (Amphitheatrum Flavium, Colosseum) to potężna budowla przeznaczona na igrzyska, które obejmowały zapasy, walki gladiatorów, walki z dzikimi zwierzętami oraz bitwy morskie, tzw. naumachie. Tradycja mówi iż w Koloseum mordowano chrześcijan, co upamiętniono krzyżem wewnątrz budowli.
+                                        Amfiteatr Flawiuszów został wzniesiony na planie owalu zbliżonego kształtem do elipsy; jego oś dłuższa ma 188 m, oś krótsza 156 m. Mierzy w obwodzie 527 m i ma dziś około 48,5 m wysokości (w przeszłości jego wysokość osiągała 52 m). Składał się z 4 kondygnacji sklepionych krzyżowo, na których biegną rzędy korytarzy i schodów.
+                                        Koloseum przetrwało wieki, ale w jego wnętrzu niewiele pozostało z oryginalnych elementów zdobiących trybuny i ściany. W 217 r. arena i najwyższe kondygnacje uległy zniszczeniu w wyniku ogromnego pożaru; w kolejnych latach trzęsienia ziemi i mniejsze pożary kolejno niszczyły poszczególne partie amfiteatru.
+
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="fontanna" class="h3 font-weight-bolt text-center my-4">Fontanna di Trevi</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/fontanna.jpg" alt="Fontanna di Trevi"/>
+                                    <p>
+                                       Fontanna Trevi to jedno z najbardziej romantycznych miejsc Rzymu.
+                                       Wśród wąskich uliczek bezustannie zatłoczonego centrum Wiecznego Miasta znajduje się mały placyk z ogromną fontanną.
+                                       Fontanna Trevi to jedna z najpiękniejszych i najbardziej imponujących włoskich budowli wodnych. Ten niezwykły, barokowy wodotrysk mieści się na całej jednej ścianie pałacu Poli i ma 20 metrów szerokości oraz 26 metrów wysokości. Miejsce to jest pełne uroku nie tylko dzięki swym rozmiarom, ale także dzięki refleksom słonecznym na falującej tafli wody w niecce basenowej.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="bazylikaPawla" class="h3 font-weight-bolt text-center my-4">Bazylika świętego Pawła za Murami</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/bazylikapawla.jpg" alt="Bazylika świętego Pawła za Murami"/>
+                                    <p>
+                                        Bazylika Świętego Pawła za Murami (Basilica di San Paolo fuori le Mura) jest jedną z pięciu głównych bazylik Rzymu. Założona przez cesarza Konstantyna w IV wieku, Basilica di San Paolo to miejsce pochówku świętego Pawła Apostoła.
+                                        Bazylika św. Pawła jest drugą co do wielkości bazyliką w Rzymie. Po obu stronach nawy głównej biegną dwie nawy boczne, oddzielone 80 ogromnymi granitowymi kolumnami.
+                                        Dość proste, przestronne wnętrze, wysokie kolumny, piękne mozaiki na łuku i absydzie, ładna marmurowa posadzka sprawiają, że kościół budzi zachwyt.
+                                        Wokół naw i transeptu, tuż poniżej poziomu okien znajdują się portrety papieży – począwszy do św. Piotra aż po obecnego papieża Franciszka.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="zamek2" class="h3 font-weight-bolt text-center my-4">Zamek świętego Anioła</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/zamek.jpg" alt="Zamek świętego Anioła"/>
+                                    <p>
+                                        Zamek Świętego Anioła (wł. Castel Sant’Angelo) to jeden z największych symboli Rzymu i jednocześnie jedna z tych budowli, która spina ze sobą antyczną historię miasta z czasami nowożytnymi. Tu zobaczycie 19 wieków historii na 6 poziomach budowli: grobowiec cesarski, twierdzę papieską, apartamenty papieskie, skarbiec, więzienie i piękny taras widokowy na cały Rzym, który jest
+                                        ukoronowaniem zwiedzania fortecy, tuż poniżej figury św. Michała Archanioła, skąd można podziwiać wspaniałą panoramę Rzymu i bazyliki św. Piotra w Watykanie.
+                                    </p>
+                                </article>
+                                
+                                <article>
+                                    <h2 id="forum" class="h3 font-weight-bolt text-center my-4">Forum Romanum</h2>
+                                    <img class="img-thumbnail d-block mx-auto mb-3" src="images/rzym/forum.jpg" alt="Forum Romanum"/>
+                                    <p>
+                                         Forum Romanum - dosłownie "rynek rzymski" - to plac w starożytnym Rzymie, u stóp Kapitolu i Palatynu. Przez cały okres republiki było centrum życia religijno politycznego, a zarazem i ekonomicznego. Z chwilą upadku cesarstwa rzymskiego nastąpił schyłek świetności, do którego przyczyniło się trzęsienie ziemi w 851 r. Do obecnych czasów zachowały się jedynie ruiny starożytnych budowli, które jednak dają wyobrażenie o ich ogromie.
+                                    </p>
+                                </article>
+                                
+                            </section>                                
+                        </div>
+                    </div>
+                </div>
+            
+	</main>
+	
+        <footer class="bg-dark text-light text-center"> &COPY;PK 2020 </footer>
+        
+</body>
+</html>
